@@ -8,13 +8,13 @@ class GameListView extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: Column(
         children: <Widget>[
-          Image.network(tangPoetryDatas[index].imageUrl),
+          Image.network(tangPoetry[index].imageUrl),
           Text(
-            tangPoetryDatas[index].title,
+            tangPoetry[index].title,
             style: Theme.of(content).textTheme.title,
           ),
           Text(
-            tangPoetryDatas[index].author,
+            tangPoetry[index].author,
             style: Theme.of(content).textTheme.subtitle,
           ),
         ],
@@ -24,7 +24,7 @@ class GameListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: tangPoetryDatas.length,
+      itemCount: tangPoetry.length,
       itemBuilder: _listItemBuilder,
       
     );

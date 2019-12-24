@@ -22,17 +22,6 @@ class _MyTabbarState extends State<TabbarController> {
       new SettingListView(),
     ];
   }
-
-  // Text getTabTitle(int curIndex) {
-  //   if (curIndex == _currentIndex) {
-  //     return new Text(appBarTitles[curIndex],
-  //         style: new TextStyle(fontSize: 14.0, color: const Color(0xff1296db)));
-  //   } else {
-  //     return new Text(appBarTitles[curIndex],
-  //         style: new TextStyle(fontSize: 14.0, color: const Color(0xff515151)));
-  //   }
-  // }
-
   void _onTapHander(int index) {
     setState(() {
       _currentIndex = index;
@@ -44,7 +33,7 @@ class _MyTabbarState extends State<TabbarController> {
     initData();
     return Scaffold(
       appBar: new AppBar(
-        title: Text(appBarTitles[_currentIndex]),
+        title: Text(appBarTitles[_currentIndex]),        
       ),
       body: _pageList[_currentIndex],
       bottomNavigationBar: new BottomNavigationBar(

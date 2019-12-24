@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       home: SampleAppPage(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.7),
       ),
     );
   }
