@@ -3,9 +3,12 @@ class HomeFunctionButton {
     this.buttonTitle,
     this.buttonBagkgroundImage,
     this.bookOfSongs,
+    this.buttonDetail,
   });
   final String buttonTitle;
   final String buttonBagkgroundImage;
+  final String buttonDetail;
+
   final List bookOfSongs;
   // final st
 }
@@ -13,32 +16,39 @@ class HomeFunctionButton {
 // ['诗经', '楚辞', '汉赋', '唐诗', '宋词', '元曲', '孙子兵法'];
 final List<HomeFunctionButton> homeFunctionButtons = [
   HomeFunctionButton(
-    buttonTitle: '诗经',
-    buttonBagkgroundImage: '',
+    buttonTitle: '诗\n经',
+    buttonBagkgroundImage:
+        'http://dl.ppt123.net/pptbj/51/20181115/pc1kvlwarg2.jpg',
+        buttonDetail:'',
   ),
   HomeFunctionButton(
-    buttonTitle: '楚辞',
-    buttonBagkgroundImage: '',
+    buttonTitle: '楚\n辞',
+    buttonBagkgroundImage:
+        'http://dl.ppt123.net/pptbj/51/20181115/u31vry00x2f.jpg',
   ),
   HomeFunctionButton(
-    buttonTitle: '汉赋',
-    buttonBagkgroundImage: '',
+    buttonTitle: '汉\n赋',
+    buttonBagkgroundImage:
+        'http://www.5tu.cn/attachments/image_files/month_1912/201911292214095753.jpg',
   ),
   HomeFunctionButton(
-    buttonTitle: '唐诗',
-    buttonBagkgroundImage: '',
+    buttonTitle: '唐\n诗',
+    buttonBagkgroundImage: 'http://pic1.16pic.com/00/33/26/16pic_3326316_b.jpg',
   ),
   HomeFunctionButton(
-    buttonTitle: '宋词',
-    buttonBagkgroundImage: '',
+    buttonTitle: '宋\n词',
+    buttonBagkgroundImage:
+        'http://image3.cnpp.cn/upload/images/20181205/14024076809_960x640.jpg',
   ),
   HomeFunctionButton(
-    buttonTitle: '元曲',
-    buttonBagkgroundImage: '',
+    buttonTitle: '元\n曲',
+    buttonBagkgroundImage:
+        'https://img01.sogoucdn.com/app/a/07/80f2e20a98944a0fa662d3fc5f472e56',
   ),
   HomeFunctionButton(
-    buttonTitle: '孙子兵法',
-    buttonBagkgroundImage: '孙子兵法',
+    buttonTitle: '孙\n子\n兵\n法',
+    buttonBagkgroundImage:
+        'https://img01.sogoucdn.com/app/a/07/80f2e20a98944a0fa662d3fc5f472e56',
   ),
 ];
 
@@ -67,14 +77,7 @@ ContentData(
     imageUrl: '',
   ),
 */
-// 诗经
-final List bookOfSongs = [
-  // 数据地址 https://www.gushiwen.org/guwen/shijing.aspx
-  bookOfSongsGuoFengZhouNan,
-  bookOfSongsGuoFengZhaoNan,
-  bookOfSongsGuoFengBeiFeng,
-  bookOfSongsGuoFengYongFeng,
-];
+
 /*
 final List<ContentData> bookOfSongs = [
   // 数据地址 https://www.gushiwen.org/guwen/shijing.aspx
@@ -246,7 +249,7 @@ final List<ContentData> bookOfSongsGuoFengZhaoNan = [
     title: '羔羊',
     author: '国风·召南-先秦：佚名',
     contents:
-        '羔羊之皮，素丝五紽(tuó)。退食(sì)自公，委(wēi)蛇(yí)委蛇。羔羊之革，素丝五緎(yù)。委蛇委蛇，自公退食。羔羊之缝，素丝五总(zǒng)。委蛇委蛇，退食自公。',
+        '羔羊之皮，素丝五紽(tuó)。退食(sì)自公，委(wēi)蛇(yí)委蛇。羔羊之革，素丝五緎(yù)��委蛇委蛇，自公退食。羔羊之缝，素丝五总(zǒng)。委蛇委蛇，退食自公。',
     notes:
         '译文:身穿一件羔皮裘，素丝合缝真考究。退朝公餐享佳肴，逍遥踱步慢悠悠。身穿一件羔皮袄，素丝密缝做工巧。逍遥踱步慢悠悠，公餐饱腹已退朝。身穿一件羔皮袍，素丝纳缝质量高。逍遥踱步慢悠悠，退朝公餐享佳肴。',
     imageUrl: '',
@@ -592,3 +595,13 @@ final List<ContentData> poetryOfTheSongDynast = [];
 final List<ContentData> verseInYuanDynasty = [];
 // 孙子兵法
 final List<ContentData> theArtOfWar = [];
+
+
+// 诗经
+final List bookOfSongs = [
+  // 数据地址 https://www.gushiwen.org/guwen/shijing.aspx
+  bookOfSongsGuoFengZhouNan,
+  bookOfSongsGuoFengZhaoNan,
+  bookOfSongsGuoFengBeiFeng,
+  bookOfSongsGuoFengYongFeng,
+];
